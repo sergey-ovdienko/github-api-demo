@@ -1,0 +1,6 @@
+@import 'npm:the-new-css-reset/css/reset.css';
+
+body {
+    padding: 1rem;
+    background: #f7f7f7;
+}

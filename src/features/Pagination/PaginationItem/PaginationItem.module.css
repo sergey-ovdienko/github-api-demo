@@ -1,0 +1,23 @@
+.item {
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: block;
+    padding: 0.25rem 0.5rem;
+    color: #000;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s ease;
+    cursor: pointer;
+}
+
+.item:not(:disabled):hover {
+    border-bottom: 2px solid rgb(101, 183, 154, 0.7);
+}
+
+.item:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.active {
+    border-bottom: 2px solid #65B79A;
+}

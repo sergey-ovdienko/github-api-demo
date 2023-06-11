@@ -1,0 +1,14 @@
+.list, .empty {
+    margin-top: 1rem;
+    height: 75vh;
+}
+
+.list {
+    overflow: scroll;
+}
+
+.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
