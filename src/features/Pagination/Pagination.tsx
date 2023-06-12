@@ -38,8 +38,8 @@ export const Pagination = () => {
     if (surroundingPages[0] > 1) {
       links.push(<span key="startgap">...</span>);
     }
-    surroundingPages.forEach((pageNumber) => {
-      links.push(
+    links.push(
+      ...surroundingPages.map((pageNumber) => (
         <PaginationItem
           key={pageNumber}
           page={pageNumber}
@@ -48,8 +48,8 @@ export const Pagination = () => {
         >
           {pageNumber}
         </PaginationItem>
-      );
-    });
+      ))
+    );
     if (surroundingPages[surroundingPages.length - 1] < totalPages) {
       links.push(<span key="endgap">...</span>);
     }
